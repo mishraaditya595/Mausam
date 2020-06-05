@@ -1,0 +1,114 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/background"
+    android:theme="@style/Theme.AppCompat.NoActionBar"
+    tools:context=".WeatherController">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Fetching Location"
+        android:id="@+id/locationTV"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="260dp"/>
+
+
+    <Button
+        android:id="@+id/changeCityButton"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="170dp"
+        android:background="#3CF1EBF1"
+        android:contentDescription="Click Here to Change City"
+        android:elevation="50dp"
+        android:padding="2dp"
+        android:text="Set city manually" />
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentLeft="false"
+        >
+
+        <ImageView
+            android:id="@+id/weatherSymbolIV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="Weather Description Here"
+            android:src="@drawable/dunno" />
+
+
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tempTV"
+        android:layout_width="240dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+
+
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="NA"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF"
+        android:textSize="90sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="18dp"
+        android:layout_weight="1"
+        android:background="#3CF1EBF1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/info"
+            android:tint="#FFFFFF" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Created By"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aditya Mishra"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
